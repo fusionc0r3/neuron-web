@@ -12,7 +12,7 @@ h2{
     font-size: 22px
 }
 img{
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .options{
     position: fixed;
@@ -47,6 +47,15 @@ input,textarea{
     outline: none;
     color: honeydew;
     border-radius: 10px;
+}
+img{
+    opacity: .79;
+    
+    transition: all 0.5s ease-in-out;
+}
+img:hover{
+    box-shadow: 0px 8px 20px #08817f5d ;
+    opacity: .99;
 }
 .slider{
     background-color: rgba(157, 53, 103,    0) !important;
@@ -143,13 +152,13 @@ input,textarea{
     height: 130px;
     width:90%;
     border-radius: 20px;
-    box-shadow: 0px 10px 70px #33f0ed4d ;
+    box-shadow: 0px 8px 16px #33f0ed4d ;
 
     z-index: 9999999;
     transition: all 1s ease-in-out;
 }
 .navbar:hover{
-    box-shadow: 0px 10px 30px #ff2d5e2f ;
+    box-shadow: 0px 8px 16px #ff2d5e2f ;
 
 }
 .header{
@@ -173,7 +182,7 @@ input,textarea{
     height: 55px;
     font-size: 18px;
     background: transparent;
-    border: 2px solid #FF2D5F;
+    border: 2px solid #FF2D5F !important;
     padding: 18px 32px;
     border-radius: 15px;
 }
@@ -351,6 +360,25 @@ z-index: -999999;
     padding: 80px 50px;
     margin: 20px;
 }
+
+.duo-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 80px 20px;
+    max-height: 2200px;
+    max-width: 1300px;
+    margin: auto;
+    color:#121212 !important;
+
+    background: url('../img/bg4.png') center no-repeat;
+    background-size: cover;
+    z-index: 999999;
+
+}
+.duo-container div{
+    padding: 80px 50px;
+    margin: 20px;
+}
 .fifth-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -457,7 +485,7 @@ z-index: -999999;
     margin: auto;
 }
 .quote{
-    border-right:8px solid #666666;text-align:right;font-weight: 800; font-size: 28px; padding:20px; 
+   text-align:center;font-weight: 700; font-size: 28px; padding:20px 80px; 
 }
 .map-container{
     padding: 100px 10px 80px 10px;
@@ -493,12 +521,12 @@ z-index: -999999;
 .premium{
     background: #A3E3FF;
     border-radius:10px;
-    padding: 40px ;
+    padding: 10px 5px 40px; 
 }
 .local{
     background: #A3E3FF;
     border-radius:10px;
-    padding: 40px ;
+    padding: 40px  10px;
 }.international2{
     background: #330913;
     border-radius:10px;
@@ -512,9 +540,29 @@ z-index: -999999;
 .local2{
     background: #330913;
     border-radius:10px;
-    padding: 40px ;
+    padding: 0px ;
 }
-
+.international:hover{
+    background: #330913;
+    border-radius:10px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    padding: 0px ;
+}
+.premium:hover{
+    background: #330913;
+    color: white;
+    border-radius:15px;
+    transition: all 0.5s ease-in-out;
+    padding: 0px ;
+}
+.local:hover{
+    background: #330913;
+    color: white;
+    border-radius:10px;
+    transition: all 0.5s ease-in-out;
+    padding: 0px ;
+}
 .asset{
     background: url('../img/bg2.png') center no-repeat;
     background-size: cover;
@@ -532,8 +580,10 @@ z-index: -999999;
 
 footer{
     text-align: right;
-    padding:20px;
-    background-color: 121212;
+    padding:20px 10px;
+    height: 120;
+    border-radius: 20px;
+    background:rgba(5, 5, 5, 0.13);
 }
 
 .button{
